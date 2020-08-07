@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Economic News</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <style>
+  body{
+    background-color: rgb(226, 204, 204)
+  }
+  </style>
+
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+</head>
+<body>
+<h1>ECONOMY NEWS</h1>
+<div id="accordion">
+  {% for i in range(length) %}
+  <h3>HEADLINE {{ i+1 }}</h3>
+  <div>
+    <p>
+    {{ news_list[i] }}
+    </p>
+  </div>
+  {% endfor %}
+</div>
+</body>
+</html>

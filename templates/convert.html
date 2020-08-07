@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>CONVERT AMOUNT</title>
+  </head>
+  <body>
+    <h1>EXCHANGE RATE</h1>
+    <form action="http://localhost:8054/convert" >
+    <div class="form-group">
+  <label for="sel1">FROM COUNTRY:</label>
+  <select class="form-control" id="sel1" name='fromcountry'>
+    <option>INR</option>
+    <option>AUD</option>
+    <option>CAD</option>
+    <option>CHF</option>
+    <option>EUR</option>
+    <option>GBP</option>
+    <option>HKD</option>
+    <option>ILS</option>
+    <option>JPY</option>
+    <option>KRW</option>
+    <option>MXN</option>
+    <option>MYR</option>
+    <option>NOK</option>
+    <option>RUB</option>
+    <option>SEK</option>
+    <option>SGD</option>
+    <option>THD</option>
+    <option>TRY</option>
+    <option>USD</option>
+    <option>ZAR</option>
+
+</div>
+
+<br>
+<br>
+
+<div class="form-group">
+  <label for="amount">AMOUNT:</label>
+  <p>AMOUNT</p>
+  <input type="text" class="form-control" id="amount" name="amount">
+</div>
+
+<button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
